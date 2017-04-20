@@ -1,0 +1,30 @@
+{
+  "name": "json-rpc-client-fetch",
+  "version": "0.1.0",
+  "description": "A simple fetch based SJON RPC client written in ES6.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apinnecke/js-json-rpc-client.git"
+  },
+  "keywords": [
+    "json-api",
+    "json",
+    "fetch"
+  ],
+  "author": "Alexander Pinnecke <alexander.pinnecke@googlemail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/apinnecke/js-json-rpc-client/issues"
+  },
+  "homepage": "https://github.com/apinnecke/js-json-rpc-client#readme",
+  "dependencies": {
+    "whatwg-fetch": "^2.0.3"
+  },
+  "devDependencies": {
+    "mocha": "^3.2.0"
+  }
+}
