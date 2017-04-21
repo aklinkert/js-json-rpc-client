@@ -1,5 +1,3 @@
-import 'whatwg-fetch';
-
 const defaultConfig = {
     debug: false,
 };
