@@ -16,6 +16,8 @@ export class JsonRpcClient {
     }
 
     request(method, params = []) {
+        const id = this.lastId++;
+        
         const req = {
             method: 'POST',
             headers: this.headers,
