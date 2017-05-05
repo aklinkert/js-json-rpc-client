@@ -1,6 +1,6 @@
 {
   "name": "json-rpc-client-fetch",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "A simple fetch based SJON RPC client written in ES6.",
   "main": "dist/index.js",
   "scripts": {

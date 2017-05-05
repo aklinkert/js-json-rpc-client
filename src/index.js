@@ -15,7 +15,7 @@ export class JsonRpcClient {
         this.headers = Object.assign({}, defaultHeaders, headers);
     }
 
-    request(method, params = []) {
+    request(method, ...params) {
         const id = this.lastId++;
         
         const req = {
@@ -47,7 +47,9 @@ function parseJSON(response) {
 }
 
 function checkStatus(response) {
-    if (response.status >= 200 && response.status < 300) {
+    // we assume 400 as valid code here because it's the default return code when sth has gone wrong,
+    // but then we have an error within the response, no?
+    if (response.status >= 200 && response.status <= 400) {
         return response;
     }
 
